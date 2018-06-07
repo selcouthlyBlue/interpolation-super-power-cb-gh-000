@@ -1,5 +1,8 @@
 # Write your #display_rainbow method here
 
 def display_rainbow(colors)
-  colors.each{ |color| print "#{color[0].upcase}: #{color}, "  }
+  rainbow = ""
+  colors.each{ |color| rainbow + "#{color[0].upcase}: #{color}, "  }
+  rainbow.slice!(-1)
+  rainbow.slice!(-1)
 end
